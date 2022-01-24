@@ -1,0 +1,17 @@
+#page_top {
+    top: 0px;
+}
+
+#nav {
+    list-style: none;
+    display: flex;
+}
+
+#nav li {
+    width: 140px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
