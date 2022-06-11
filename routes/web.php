@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Front\QiitaPageContoller;
 use App\Http\Controllers\Front\TopPageController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [TopPageController::class, 'index'])
     ->name('top_page');
+
+Route::get('/qiita', [QiitaPageContoller::class, 'index'])
+    ->name('qiita.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
